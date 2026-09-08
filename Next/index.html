@@ -31,9 +31,15 @@
       }
 
       function HomePage(){
+        const names = ['Ada lovelace', 'Grace Hopper', 'Margaret hamilton'];
         return (
             <div>
-                <Header  />
+                <Header title="Develop. Preview. Ship." />
+                <ul>
+               {names.map((name) => (
+                <li>{name}</li>
+               ))}
+               </ul>
                 </div>
             );
       }
